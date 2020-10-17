@@ -45,6 +45,7 @@ int main()
 		adj[x - 1].push_back(y - 1);
 		adj[y - 1].push_back(x - 1);
 	}
+	
 	int x, y;
 	std::cin >> x >> y;
 	std::cout << reach(adj, x - 1, y - 1);
