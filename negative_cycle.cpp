@@ -64,13 +64,17 @@ void dijktra(vector<vector<int> > &adj, vector<vector<long> > &cost, int s)
 	dist[s] = 0;
 	priority_queue <int, vector<int>, std::greater<int>> sptSet;
 	sptSet.push(s);
-	//data_.push_back(s);
+
+	
 
 	//while (data_.size() != NULL)
-	while (sptSet.size() != NULL)
+
+	while (Que.size() != NULL)
 	{
-		int u = sptSet.top();
+		PrNdeId top = sptSet.top();
 		sptSet.pop();
+
+		
 
 		/*int u = data_[0];
 		data_.erase(data_.begin());
